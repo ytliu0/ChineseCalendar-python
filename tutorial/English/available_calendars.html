@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="Chinese calendar" />
+
+<head>
+<title>Available Calendars</title>
+<style>
+body{
+   font:16px/20px arial, verdana, helvetica, sans-serif;
+	color:#333;
+	background-color:white;
+	margin: 20px;
+	padding:0px;
+	line-height: 20px;
+}
+
+div#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:800px;
+}
+
+table {
+    font:16px/20px arial, verdana, helvetica, sans-serif;
+	color:#333;
+	margin:2px;
+	padding:2px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+}
+
+.ref {
+    color:green;
+}
+</style>
+</head>
+    
+<body>
+<div id="wrapper">
+    
+<h1>Available Calendars</h1>
+
+<table>
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <col width="40%" -->
+<tr><th>Calendar label</th><th>Region/Dynasty</th> <th>Years of usage</th><th>Astronomical System</th></tr>
+<tr><td>Chunqiu</td> <td>Lu</td> <td>circ -721 &ndash; circ -480</td> <td>Chunqiu</td></tr>
+<tr><td>Zhou</td> <td>Zhou</td> <td>circ -479 &ndash; -255</td> <td rowspan="7"><a href="https://ytliu0.github.io/ChineseCalendar/guliuli.html" target="_blank">Ancient six calendars</a>. Xia calendar has two versions: Xia1 is the Z11 version and Xia2 is the Z1 version.</td></tr>
+<tr><td>Yin</td> <td></td> <td>circ -479 &ndash; -222</td> </tr>
+<tr><td>Lu</td> <td>Lu</td> <td>circ -479 &ndash; -248</td></tr>
+<tr><td>Huangdi</td> <td></td> <td>circ -479 &ndash; -222</td></tr>
+<tr><td>Xia1</td> <td></td> <td>circ -479 &ndash; -222</td> </tr>
+<tr><td>Xia2</td> <td></td> <td>circ -479 &ndash; -222</td> </tr>
+<tr><td>Zhuanxu</td> <td>Qin</td> <td>circ -305 &ndash; circ -222</td> </tr>
+<tr><td>QinEarlyHan</td> <td>Qin, Han</td> <td>circ -246 &ndash; -103</td> <td><a href="https://ytliu0.github.io/ChineseCalendar/QinHanCalendars.html" target="_blank">Qin and Early Han calendars</a></td> </tr>
+<tr><td>Shu</td> <td>Shu</td> <td>221 &ndash; 263</td> <td>Sifen</td> </tr>
+<tr><td>Wu</td> <td>Wu</td> <td>222 &ndash; 280</td> <td>Sifen (222), Qianxiang (223-280)</td> </tr>
+<tr><td>LaterQin</td> <td>Later Qin</td> <td>384 &ndash; 417</td> <td>Sanji</td> </tr>
+<tr><td>NorthernLiang</td> <td>Northern Liang</td> <td>412 &ndash; 439</td> <td>Xuanshi</td> </tr>
+<tr><td>WeiZhouSui</td> <td>Northern Wei (398-534), Western Wei (535-557), Northern Zhou (557-581), Sui (581-589)</td> <td>398 &ndash; 589</td> <td>Jingchu (398-451), Xuanshi (452-522), Zhengguang (523-558), Mingkerang (559-565), Tianhe (566-578), Daxiang (579-583), Kaihuang (584-589)</td> </tr>
+<tr><td>WeiQi</td> <td>Eastern Wei (534-550), Northern Qi (550-577)</td> <td>534 &ndash; 577</td> <td>Zhengguang (534-539), Xinghe (540-550), Tianbao (551-577)</td> </tr>
+<tr><td>LiaoJinYuan</td> <td>Khitan/Liao (947-1125), Jin (1126-1234), Mongol/Yuan (1235-1279)</td> <td>947 &ndash; 1279</td> <td>Jiajun's Daming (947-1136), Yangji's Daming (1137-1181), revised Daming (1182-1279)</td> </tr>
+<tr><td>SouthernMing</td> <td>Southern Ming, Zheng</td> <td>1645 &ndash; 1683</td> <td><a href="https://ytliu0.github.io/ChineseCalendar/SouthernMingCalendar.html" target="_blank">Datong calendar of the waning Ming dynasty</a></td> </tr>
+<tr><td>GBT</td> <td>People's Republic of China</td> <td>2018 &ndash; present</td> <td>Purple Mountain GB/T 33661-2017</td> </tr>
+</table>
+
+<p>In the code, Chunqiu, LiaoJinYuan and SouthernMing calendar data are obtained by table lookup. Thus, they can only be used in the years of usage. The other calendar data (apart from GBT) are calculated and can in principle be used outside the years of usage, but it is strongly discouraged to do so. The calendar data for GBT are computed based on the pre-computed DE431/DE441 Moon phase and solar term data in -3500 &ndash; 3500. However, the GBT calendar data before 1929 are known to deviate from the actual calendar, and the computed GBT data in far future are subjected to the uncertainty of Earth's irregular rotation rate.</p>
+<br />
+</div><!-- end of wrapper -->
+    
+</body>
+</html>

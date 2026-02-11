@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="Chinese calendar" />
+
+<head>
+<title>其他支持的中曆</title>
+<style>
+body{
+   font:16px/20px arial, verdana, helvetica, sans-serif;
+	color:#333;
+	background-color:white;
+	margin: 20px;
+	padding:0px;
+	line-height: 20px;
+    letter-spacing: 2px;
+}
+
+div#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:800px;
+}
+
+table {
+    font:16px/20px arial, verdana, helvetica, sans-serif;
+	color:#333;
+	margin:2px;
+	padding:2px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+}
+
+.ref {
+    color:green;
+}
+</style>
+</head>
+    
+<body>
+<div id="wrapper">
+    
+<h1>其他支持的中曆</h1>
+
+<table>
+    <col width="20%">
+    <col width="20%">
+    <col width="20%">
+    <col width="40%" -->
+<tr><th>中曆標記</th><th>朝代/地域</th> <th>行用年份</th><th>曆法</th></tr>
+<tr><td>Chunqiu</td> <td>魯國</td> <td>約 -721 &ndash; 約 -480</td> <td>春秋曆</td></tr>
+<tr><td>Zhou</td> <td>周朝</td> <td>約 -479 &ndash; -255</td> <td>周曆</td></tr>
+<tr><td>Yin</td> <td></td> <td>約 -479 &ndash; -222</td><td>殷曆</td> </tr>
+<tr><td>Lu</td> <td>魯國</td> <td>約 -479 &ndash; -248</td><td>魯曆</td></tr>
+<tr><td>Huangdi</td> <td></td> <td>約 -479 &ndash; -222</td><td>黃帝曆</td></tr>
+<tr><td>Xia1</td> <td></td> <td>約 -479 &ndash; -222</td><td rowspan="2">夏曆; 夏曆有兩個版本，Xia1是甲子日夜半冬至合朔齊同，Xia2是甲子日夜半雨水合朔齊同。</td> </tr>
+<tr><td>Xia2</td> <td></td> <td>約 -479 &ndash; -222</td> </tr>
+<tr><td>Zhuanxu</td> <td>秦國</td> <td>約 -305 &ndash; 約 -222</td><td>顓頊曆</td> </tr>
+<tr><td>QinEarlyHan</td> <td>秦、西漢</td> <td>約 -246 &ndash; -103</td> <td><a href="https://ytliu0.github.io/ChineseCalendar/QinHanCalendars_chinese.html" target="_blank">秦漢顓頊曆</a></td> </tr>
+<tr><td>Shu</td> <td>蜀</td> <td>221 &ndash; 263</td> <td>四分曆</td> </tr>
+<tr><td>Wu</td> <td>吳</td> <td>222 &ndash; 280</td> <td>四分曆(222)、 乾象曆(223-280)</td> </tr>
+<tr><td>LaterQin</td> <td>後秦</td> <td>384 &ndash; 417</td> <td>三紀曆</td> </tr>
+<tr><td>NorthernLiang</td> <td>北涼</td> <td>412 &ndash; 439</td> <td>玄始曆</td> </tr>
+<tr><td>WeiZhouSui</td> <td>北魏(398-534)、西魏(535-557)、北周 (557-581)、 隋(581-589)</td> <td>398 &ndash; 589</td> <td>景初曆(398-451)、玄始曆(452-522)、正光曆(523-558)、明克讓曆(559-565)、天和曆(566-578)、大象曆(579-583)、開皇曆(584-589)</td> </tr>
+<tr><td>WeiQi</td> <td>東魏(534-550)、北齊(550-577)</td> <td>534 &ndash; 577</td> <td>正光曆(534-539)、興和曆(540-550)、天保曆(551-577)</td> </tr>
+<tr><td>LiaoJinYuan</td> <td>契丹/遼(947-1125)、金(1126-1234)、蒙古/元(1235-1279)</td> <td>947 &ndash; 1279</td> <td>賈俊大明曆(947-1136)、楊級大明曆(1137-1181)、趙知微重修大明曆(1182-1279)</td> </tr>
+<tr><td>SouthernMing</td> <td>南明、明鄭</td> <td>1645 &ndash; 1683</td> <td><a href="https://ytliu0.github.io/ChineseCalendar/SouthernMingCalendar_chinese.html" target="_blank">殘明大統曆</a></td> </tr>
+<tr><td>GBT</td> <td>中華人民共和國</td> <td>2018 &ndash; 現在</td> <td>紫金曆 GB/T 33661-2017</td> </tr>
+</table>
+
+<p>本軟體的春秋曆、遼金元諸曆法及殘明大統曆用查表法獲取，所以這些曆法只能用於行用的年份。除了GBT外，其他曆法是用公式計算的，所以原則上可用於曆法行用年份以外，但這裡極不鼓勵用者如此做。農曆國家標準 GB/T 33661-2017 的曆日是用預先算好的 DE431/DE441 由 -3500年至3500年合朔和節氣時刻計算的，所以原則上本軟體提供的 GB/T 33661-2017 曆法可用來計算-3500年至3500年的國標農曆，但是1929年前的中曆與國標農曆的計算有差異，因地球自轉不均勻而無法準確預測幾十年後 TDB 與 UTC 的差異，所以幾十年後的若干曆日或與現在算出的有差異。TDB 與 UTC 的轉換須要約一年更新一次以含括最新閏秒數據。因閏秒將於2035年或更早會被取消，到時便不用頻繁更新。</p>
+<br />
+</div><!-- end of wrapper -->
+    
+</body>
+</html>

@@ -8,7 +8,8 @@ If you just want to look up the Chinese calendar date from a given Western calen
 ## Installation 
 
 Use the following pip command to install and update this package. 
-`pip install --upgrade ChineseCalendar`
+
+`pip install --upgrade ChineseCalendar_py`
 
 ## Basic usage
 

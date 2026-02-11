@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="Chinese calendar" />
+
+<head>
+<title>Default Chinese Calendar</title>
+<style>
+body{
+   font:16px/20px arial, verdana, helvetica, sans-serif;
+	color:#333;
+	background-color:white;
+	margin: 20px;
+	padding:0px;
+	line-height: 20px;
+}
+
+div#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:800px;
+}
+
+table {
+    font:16px/20px arial, verdana, helvetica, sans-serif;
+	color:#333;
+	margin:2px;
+	padding:2px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align:center;
+}
+
+.ref {
+    color:green;
+}
+</style>
+</head>
+    
+<body>
+<div id="wrapper">
+    
+<h1>Default Chinese Calendar in -721&ndash;2200</h1>
+
+<p>The default calendar supports years from -721 to 2200. There were certain periods in the past when China was divided into many states, and multiple verions of Chinese calendars were used in different states in those periods. The default Chinese calendar chooses a specific set of calendars in those periods. We follow the choice in <i>3500 Years of Calendars and Astronomical Phenomena</i><sup><a href="#Zhang1997">Zhang97</a></sup>. The following table lists the calendars used in -721&ndash;2200.</p>
+
+<table>
+    <col width="15%">
+    <col width="35%">
+    <col width="50%">
+<tr><th>Years</th> <th>Region/Dynasty</th> <th>Astronomical System</th></tr>
+
+<tr><td>&lt; -721</td> <td colspan="2">not supported</td></tr>
+
+<tr><td>-721 &ndash; -480</td> <td>Lu</td> <td>Chunqiu</td></tr>
+
+<tr><td>-479 &ndash; -221</td> <td>Zhou</td> <td>Zhou calendar</td></tr>
+
+<tr><td>-220 &ndash; -104</td> <td>Qin, Western Han</td><td>Qin and Early Han calendar</td></tr>
+
+<tr><td>-103 &ndash; 84</td><td>Western Han, Xin, Gengshi, Eastern Han</td> <td>Taichu/Santong</td></tr>
+
+<tr><td>85 &ndash; 220</td><td>Eastern Han</td> <td>Sifen</td></tr>
+
+<tr><td>220 &ndash; 265</td><td>Wei</td> <td>Sifen (220-236), Jingchu (237-265)</td></tr>
+
+<tr><td>265 &ndash; 419</td><td>Jin</td> <td>Jingchu</td></tr>
+
+<tr><td>420 &ndash; 589</td><td>South Dynasties: Song, Qi, Liang, Chen</td> <td>Jingchu (420-444), Yuanjia (445-509), Daming (510-589)</td></tr>
+
+<tr><td>590 &ndash; 618</td><td>Sui</td> <td>Kaihuang (590-596), Daye (597-618)</td></tr>
+
+<tr><td>618 &ndash; 907</td><td>Tang</td> <td>Daye (618), Wuyinyuan (619-664), Linde (665-728), Dayan (729-761), Wuji (762-783), Guanxiang (784-806), Xuanming (807-821), Chongxuan (822-892), Tiaoyuan (893-907)</td></tr>
+
+<tr><td>907 &ndash; 959</td><td>Five Dynasties: Liang, Tang Jin, Han, Zhou</td> <td>Tiaoyuan (907-938), Chongxuan (939-943), Qintian (944-955), Yingtian (956-959)</td></tr>
+
+<tr><td>960 &ndash; 1279</td><td>Song</td> <td>Yingtian (960-982), Qianyuan (983-1000), Yitian (1001-1023), Chongtian (1024-1064), Mingtian (1065-1067), Chongtian (1068-1074), Fengyuan (1075-1093), Quantian (1094-1102), Zhantian (1103-1105), Jiyuan (1106-1135), Tongyuan (1136-1167), Qiandao (1168-1176), Chunxi (1177-1190), Huiyuan (1191-1198), Tongtian (1199-1207), Kaixi (1208-1251), Chunyou (1252), Huitian (1253-1270), Chengtian (1271-1276), Bentian (1277-1279)</td></tr>
+
+<tr><td>1280 &ndash; 1367</td><td>Yuan</td> <td>Revised Daming (1280), Shoushi (1281-1367)</td></tr>
+
+<tr><td>1368 &ndash; 1644</td><td>Ming</td> <td>Datong</td></tr>
+
+<tr><td>1645 &ndash; 1911</td><td>Qing</td> <td>Shixian</td></tr>
+
+<tr><td>1912 &ndash; 1949</td><td>Republic of China</td> <td>Shixian (1912-1913), Republic of China system (1914-1928), Nationalist system (1929-1949)</td></tr>
+
+<tr><td>1949 &ndash; 2200</td><td>People's Republic of China</td> <td>Nationalist system (1949-1950), Purple Mountain system (1951-2017), Purple Mountain GB/T 33661-2017 standard (2018-2200)</td></tr>
+
+<tr><td>&gt; 2200</td> <td colspan="2">not supported</td></tr>
+</table>
+<br />
+<p>The calendar data in -103 &ndash; 2200 are stored in an array for table lookup. The Lu calendar in -721 &ndash; -480 is reconstructed based on the information in Section 3.5 of <i>Ancient Chinese Calendars and Almanacs</i><sup><a href="#ZCBH2008">ZCBH</a></sup>. The computation method is explained on my <a href="https://ytliu0.github.io/ChineseCalendar/chunqiu.html" target="_blank">Chunqiu Calendar page</a>. The Zhou calendar, which is one of the ancient six calendars, in -479 &ndash; -221 is computed using the equations described on my <a href="https://ytliu0.github.io/ChineseCalendar/guliuli.html" target="_blank">ancient six calendar page</a>. The Qin and Early Han calendar in -220 &ndash; -104 is computed using the equations described on my <a href="https://ytliu0.github.io/ChineseCalendar/QinHanCalendars.html" target="_blank"> Qin-Early Han calendar page</a>.</p>
+
+<h2>References</h2>
+
+<ul style="list-style-type:none;">
+<li id="ZCBH2008"><p>[<span class="ref">ZCBH</span>] Zh&#257;ng, P&#233;iy&#250; (&#24373;&#22521;&#29788;), Ch&#233;n, M&#283;id&#333;ng (&#38515;&#32654;&#26481;), B&#243;, Sh&#249;r&#233;n (&#34180;&#27193;&#20154;), and H&#250;, Ti&#283;zh&#363; (&#32993;&#37941;&#29664;), <i>Zh&#333;ng Gu&#243; G&#468;d&#224;i L&#236;f&#462;</i> (&#12298;&#20013;&#22269;&#21476;&#20195;&#21382;&#27861;&#12299; or <i>Ancient Chinese Calendars and Almanacs</i>), China Science Press (Beijing), March 2008.</p></li>
+
+<li id="Zhang1997"><p>[<span class="ref">Zhang97</span>] Zh&#257;ng, P&#233;iy&#250; (&#24373;&#22521;&#29788;),  <i>S&#257;nqi&#257;n W&#468;b&#462;ini&#462;n L&#236;r&#236; Ti&#257;nxi&#224;ng</i> (&#12298;&#19977;&#21315;&#20116;&#30334;&#24180;&#21382;&#26085;&#22825;&#35937;&#12299; or <i>3500 Years of Calendars and Astronomical Phenomena</i>), Elephant Press, July 1997.</p></li>
+</ul>
+</div><!-- end of wrapper -->
+    
+</body>
+</html>

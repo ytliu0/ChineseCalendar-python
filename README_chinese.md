@@ -9,7 +9,8 @@
 ## 安裝
 
 用以下 pip 指令安裝及更新本軟體套件。
-`pip install --upgrade ChineseCalendar`
+
+`pip install --upgrade ChineseCalendar_py`
 
 ## 基本使用
 
