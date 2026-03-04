@@ -1241,7 +1241,7 @@ def print_Chinese_year_html(cal, y, calendar, ephemeris):
 
 def conjunction_date_html(cal, date, inp):
     """
-    Sisplay the conjunction lunar date in a Western calendar table.
+    Display the conjunction lunar date in a Western calendar table.
     For most of the case, it's just [Chinese month number]-01 for English or 某月 in Chinese. 
     The string will be bold and in brown or red (if it's the Chinese New Year).
     """
